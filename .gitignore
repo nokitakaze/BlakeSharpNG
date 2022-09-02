@@ -1,0 +1,6 @@
+/.idea
+/*.DotSettings.user
+/BlakeSharpNG_coverage.xml
+
+bin/
+obj/

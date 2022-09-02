@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlakeSharpNG", "BlakeSharpNG\BlakeSharpNG.csproj", "{312635DF-D515-488A-B091-5235D76C27EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlakeSharpNG.Test", "BlakeSharpNG.Test\BlakeSharpNG.Test.csproj", "{ED873636-2C62-4F29-93F3-EB3F13430C38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{312635DF-D515-488A-B091-5235D76C27EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312635DF-D515-488A-B091-5235D76C27EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312635DF-D515-488A-B091-5235D76C27EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312635DF-D515-488A-B091-5235D76C27EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8D98E75-9834-4448-BC9D-EA16ED4CDD0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D98E75-9834-4448-BC9D-EA16ED4CDD0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D98E75-9834-4448-BC9D-EA16ED4CDD0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D98E75-9834-4448-BC9D-EA16ED4CDD0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED873636-2C62-4F29-93F3-EB3F13430C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED873636-2C62-4F29-93F3-EB3F13430C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED873636-2C62-4F29-93F3-EB3F13430C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED873636-2C62-4F29-93F3-EB3F13430C38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
