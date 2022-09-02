@@ -104,6 +104,7 @@ namespace BlakeSharpNG
         /// <summary>
         /// Convert an <c>UInt64</c> to 8 bytes using big-endian.
         /// </summary>
+        // ReSharper disable once SuggestBaseTypeForParameter
         private static void UInt64ToBytes(ulong u, byte[] pbOut, int iOffset)
         {
             for (int i = 7; i >= 0; --i)
@@ -265,7 +266,10 @@ namespace BlakeSharpNG
 
             byte[] pbDigest = new byte[64];
             for (int i = 0; i < 8; ++i)
+            {
                 UInt64ToBytes(m_h[i], pbDigest, i << 3);
+            }
+
             return pbDigest;
         }
     }

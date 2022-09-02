@@ -94,6 +94,7 @@ namespace BlakeSharpNG
         /// <summary>
         /// Convert an <c>UInt32</c> to 4 bytes using big-endian.
         /// </summary>
+        // ReSharper disable once SuggestBaseTypeForParameter
         private static void UInt32ToBytes(uint u, byte[] pbOut, int iOffset)
         {
             for (int i = 3; i >= 0; --i)
@@ -259,7 +260,10 @@ namespace BlakeSharpNG
 
             byte[] pbDigest = new byte[32];
             for (int i = 0; i < 8; ++i)
+            {
                 UInt32ToBytes(m_h[i], pbDigest, i << 2);
+            }
+
             return pbDigest;
         }
     }
