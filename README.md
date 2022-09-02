@@ -1,5 +1,8 @@
 BlakeSharpNG
 ===========
+[![Build status](https://ci.appveyor.com/api/projects/status/r5qb64o5u2pjqkyf/branch/master?svg=true)](https://ci.appveyor.com/project/nokitakaze/BlakeSharpNG/branch/master)
+[![Test status](https://img.shields.io/appveyor/tests/nokitakaze/BlakeSharpNG/master)](https://ci.appveyor.com/project/nokitakaze/BlakeSharpNG/branch/master)
+[![codecov](https://codecov.io/gh/nokitakaze/BlakeSharpNG/branch/master/graph/badge.svg)](https://codecov.io/gh/nokitakaze/BlakeSharpNG)
 [![Nuget version](https://badgen.net/nuget/v/BlakeSharpNG)](https://www.nuget.org/packages/BlakeSharpNG)
 [![Total nuget downloads](https://badgen.net/nuget/dt/BlakeSharpNG)](https://www.nuget.org/packages/BlakeSharpNG)
 
