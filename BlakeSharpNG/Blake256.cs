@@ -22,18 +22,18 @@ namespace BlakeSharpNG
 {
     public sealed class Blake256 : HashAlgorithm
     {
-        private uint[] m_h = new uint[8];
-        private uint[] m_s = new uint[4];
+        private readonly uint[] m_h = new uint[8];
+        private readonly uint[] m_s = new uint[4];
 
         // private uint[] m_t = new uint[2];
         private ulong m_t;
 
         private int m_nBufLen;
         private bool m_bNullT;
-        private byte[] m_buf = new byte[64];
+        private readonly byte[] m_buf = new byte[64];
 
-        private uint[] m_v = new uint[16];
-        private uint[] m_m = new uint[16];
+        private readonly uint[] m_v = new uint[16];
+        private readonly uint[] m_m = new uint[16];
 
         private const int NbRounds = 14;
 
