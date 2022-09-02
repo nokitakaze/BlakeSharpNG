@@ -2,6 +2,12 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <PackageVersion>0.1.0</PackageVersion>
+        <Authors>Dominik Reichl</Authors>
+        <Description>SHA-3 proposal Blake</Description>
+        <PackageLicenseExpression>CPOL-1.02</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/nokitakaze/BlakeSharpNG</PackageProjectUrl>
+        <PackageTags>blake256 blake512</PackageTags>
     </PropertyGroup>
 
 </Project>
