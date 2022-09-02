@@ -9,3 +9,5 @@ obj/
 /test_case_generator/package-lock.json
 /test_case_generator/node_modules
 /test_case_generator/test-blake.tsv
+
+/BlakeSharpNG.Benchmark/BenchmarkDotNet.Artifacts

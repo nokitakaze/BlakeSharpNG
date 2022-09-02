@@ -19,6 +19,13 @@ var hashString = string.Concat(hash.Select(t => t.ToString("x2")));
 Console.WriteLine(hashString);
 ```
 
+## Benchmark
+[Main benchmark](docs/main-benchmark.md)
+
+On AMD Ryzen 9 3900X BOX 3.8 GHz:
+- `Blake256` — 38.72 MB/sec
+- `Blake512` — 65.82 MB/sec
+
 ## License
 Licensed under the Code Project Open License 1.02.
 
