@@ -77,8 +77,8 @@ namespace BlakeSharpNG.Test
                     }
 
                     InputDatum.Add((byte[])datum[0]);
-                    
-                    return new object[]{index, datum[1], datum[2]};
+
+                    return new object[] { index, datum[1], datum[2] };
                 })
                 .ToArray();
         }
@@ -93,16 +93,18 @@ namespace BlakeSharpNG.Test
         public void MainTestCase(int inputId, string expectedBlake256, string expectedBlake512)
         {
             byte[] input = InputDatum[inputId];
-            
+
             {
                 using var algo = new Blake256();
                 var hash = algo.ComputeHash(input);
+                Assert.Equal(32, hash.Length);
                 var hashString = string.Concat(hash.Select(t => t.ToString("x2")));
                 Assert.Equal(expectedBlake256, hashString);
             }
             {
                 using var algo = new Blake512();
                 var hash = algo.ComputeHash(input);
+                Assert.Equal(64, hash.Length);
                 var hashString = string.Concat(hash.Select(t => t.ToString("x2")));
                 Assert.Equal(expectedBlake512, hashString);
             }

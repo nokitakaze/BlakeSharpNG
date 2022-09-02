@@ -37,7 +37,7 @@ for (let i = 0; i < 100; i += 5) {
     }
 }
 
-for (let i of [71, 143]) {
+for (let i of [55 - 1, 72 - 1, 144 - 1]) {
     lines.push(generateHafaLine(i, 0));
 }
 
