@@ -37,6 +37,7 @@ namespace BlakeSharpNG
 
         private const int NbRounds = 14;
 
+        // ReSharper disable once RedundantExplicitArraySize
         private static readonly int[] g_sigma = new int[NbRounds * 16]
         {
             0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
@@ -55,6 +56,7 @@ namespace BlakeSharpNG
             7, 9, 3, 1, 13, 12, 11, 14, 2, 6, 5, 10, 4, 0, 15, 8
         };
 
+        // ReSharper disable once RedundantExplicitArraySize
         private static readonly uint[] g_cst = new uint[16]
         {
             0x243F6A88U, 0x85A308D3U, 0x13198A2EU, 0x03707344U,
@@ -63,6 +65,7 @@ namespace BlakeSharpNG
             0xC0AC29B7U, 0xC97C50DDU, 0x3F84D5B5U, 0xB5470917U
         };
 
+        // ReSharper disable once RedundantExplicitArraySize
         private static readonly byte[] g_padding = new byte[64]
         {
             0x80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -80,8 +83,10 @@ namespace BlakeSharpNG
         /// <summary>
         /// Convert 4 bytes to an <c>UInt32</c> using big-endian.
         /// </summary>
+        // ReSharper disable once SuggestBaseTypeForParameter
         private static uint BytesToUInt32(byte[] pb, int iOffset)
         {
+            // ReSharper disable once RedundantCast
             return ((uint)pb[iOffset + 3] | ((uint)pb[iOffset + 2] << 8) |
                     ((uint)pb[iOffset + 1] << 16) | ((uint)pb[iOffset] << 24));
         }
@@ -226,7 +231,7 @@ namespace BlakeSharpNG
             if (m_nBufLen == 55)
             {
                 m_t -= 8;
-                HashCore(new byte[1] { 0x81 }, 0, 1);
+                HashCore(new byte[] { 0x81 }, 0, 1);
             }
             else
             {
@@ -245,7 +250,7 @@ namespace BlakeSharpNG
                     m_bNullT = true;
                 }
 
-                HashCore(new byte[1] { 0x01 }, 0, 1);
+                HashCore(new byte[] { 0x01 }, 0, 1);
                 m_t -= 8;
             }
 

@@ -37,6 +37,7 @@ namespace BlakeSharpNG
 
         private const int NbRounds = 16;
 
+        // ReSharper disable once RedundantExplicitArraySize
         private static readonly int[] g_sigma = new int[NbRounds * 16]
         {
             0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
@@ -57,6 +58,7 @@ namespace BlakeSharpNG
             2, 12, 6, 10, 0, 11, 8, 3, 4, 13, 7, 5, 15, 14, 1, 9
         };
 
+        // ReSharper disable once RedundantExplicitArraySize
         private static readonly ulong[] g_cst = new ulong[16]
         {
             0x243F6A8885A308D3UL, 0x13198A2E03707344UL, 0xA4093822299F31D0UL,
@@ -67,6 +69,7 @@ namespace BlakeSharpNG
             0x636920D871574E69UL
         };
 
+        // ReSharper disable once RedundantExplicitArraySize
         private static readonly byte[] g_padding = new byte[128]
         {
             0x80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -88,8 +91,10 @@ namespace BlakeSharpNG
         /// <summary>
         /// Convert 8 bytes to an <c>UInt64</c> using big-endian.
         /// </summary>
+        // ReSharper disable once SuggestBaseTypeForParameter
         private static ulong BytesToUInt64(byte[] pb, int iOffset)
         {
+            // ReSharper disable once RedundantCast
             return ((ulong)pb[iOffset + 7] | ((ulong)pb[iOffset + 6] << 8) |
                     ((ulong)pb[iOffset + 5] << 16) | ((ulong)pb[iOffset + 4] << 24) |
                     ((ulong)pb[iOffset + 3] << 32) | ((ulong)pb[iOffset + 2] << 40) |
@@ -232,7 +237,7 @@ namespace BlakeSharpNG
             if (m_nBufLen == 111)
             {
                 m_t -= 8;
-                HashCore(new byte[1] { 0x81 }, 0, 1);
+                HashCore(new byte[] { 0x81 }, 0, 1);
             }
             else
             {
@@ -251,7 +256,7 @@ namespace BlakeSharpNG
                     m_bNullT = true;
                 }
 
-                HashCore(new byte[1] { 0x01 }, 0, 1);
+                HashCore(new byte[] { 0x01 }, 0, 1);
                 m_t -= 8;
             }
 
