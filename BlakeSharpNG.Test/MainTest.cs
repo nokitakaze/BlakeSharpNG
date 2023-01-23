@@ -17,7 +17,7 @@ namespace BlakeSharpNG.Test
             var inputRaw = lines
                 .Select(line =>
                 {
-                    var a = line.Split("\t").ToArray();
+                    var a = line.Split('\t').ToArray();
 
                     return (input: a, blake256: a[1], blake512: a[2]);
                 })

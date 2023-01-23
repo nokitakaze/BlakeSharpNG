@@ -1,12 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
-        <PackageVersion>0.1.0</PackageVersion>
+        <PackageVersion>0.1.1</PackageVersion>
         <Authors>Dominik Reichl</Authors>
         <Description>SHA-3 proposal Blake</Description>
         <PackageProjectUrl>https://github.com/nokitakaze/BlakeSharpNG</PackageProjectUrl>
         <PackageTags>blake256 blake512</PackageTags>
+        <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+        <LangVersion>9</LangVersion>
     </PropertyGroup>
 
 </Project>

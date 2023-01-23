@@ -1,5 +1,6 @@
 /.idea
 /*.DotSettings.user
+*.csproj.DotSettings
 /BlakeSharpNG_coverage.xml
 
 bin/
